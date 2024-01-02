@@ -1,0 +1,78 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.custom-accordion {
+    max-width: 100px; /* Adjust this value as needed */
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgb(27, 64, 128);
+}
+.healthservices {
+    background-color: blue;
+}
+.footerbottom {
+    background-color: rgb(27, 64, 128);
+}
+.btn-group-vertical {
+    width: 100%;
+}
+.lower-left-buttons {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 20px; /* Adjust the distance from the left */
+}
+
+/* Initial styles for modals and menu */
+.modal {
+    display: none; /* Initially hide the modal */
+    /* Other modal styles */
+  }
+  
+  .menu {
+    width: 250px; /* Define the width of the menu */
+    height: 100vh; /* Set height to full viewport height */
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially position the menu outside the viewport */
+    background-color: #f1f1f1;
+    transition: left 0.3s ease; /* Add a transition for smooth movement */
+  }
+  
+  .menu.open {
+    left: 0; /* When 'open' class is added, bring the menu to view */
+  }
+  .icon-with-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-with-title svg {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+
+  #clock {
+    font-size: 3em; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+
+
+
+.navbar-nav .nav-link:hover {
+  color: gold !important; /* Change the link color to gold on hover */
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: gold; /* Change background color to gold on hover */
+}
+@media (min-width: 992px) {
+  .navbar-expand-xxl .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: gold; /* Change background color to gold on hover */
+  }
+}
