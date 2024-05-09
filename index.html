@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+        <div id="content">
+            <p>This is the main content area.</p>
+            <button id="changeColorBtn">Change Color</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script>
+        document.getElementById('changeColorBtn').addEventListener('click', function() {
+            var content = document.getElementById('content');
+            var currentColor = content.style.backgroundColor;
+            var newColor = currentColor === 'rgb(240, 240, 240)' ? '#ffc107' : '#f0f0f0';
+            content.style.backgroundColor = newColor;
+        });
+    </script>
+</body>
+</html>
